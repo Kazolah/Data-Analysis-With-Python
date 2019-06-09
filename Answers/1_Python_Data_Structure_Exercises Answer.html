@@ -13116,13 +13116,12 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.-Python-Data-Structure-Exercises">1. Python Data Structure Exercises<a class="anchor-link" href="#1.-Python-Data-Structure-Exercises">&#182;</a></h1><p>From the slides, we have learned the basic python data types: <br>
-1) Tuple <br>
+<h1 id="1.-Python-Data-Structure-Exercises">1. Python Data Structure Exercises<a class="anchor-link" href="#1.-Python-Data-Structure-Exercises">&#182;</a></h1><p>From the slides, you have learned: <br>
+1) Variables and Data Types <br>
 2) List <br>
-3) Set <br>
-4) Dictionary <br>
+3) Dictionary <br>
 <br>
-In this exercise, you will learn the basic common operations for above data structures. <br>
+In this exercise, you will perform some basic common operations for the above data structures. <br>
 <br>
 Time to complete: 15 mins</p>
 
@@ -13132,9 +13131,11 @@ Time to complete: 15 mins</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exercise-1:-Tuple">Exercise 1: Tuple<a class="anchor-link" href="#Exercise-1:-Tuple">&#182;</a></h2><p>A tuple is a sequence of immutable Python objects. <br>
-Suppose you have a tuple object like below. <br>
-<b>Note: Run the following cell.</b></p>
+<h3 id="Run-a-Cell">Run a Cell<a class="anchor-link" href="#Run-a-Cell">&#182;</a></h3><ul>
+<li>Select the following cell and click on the <code>Run</code> button in the Toolbar to execute. </li>
+<li>Run all the cells that you find in sequence.</li>
+<li>Python ignores the sentences that starts with # (Hash Tag). These are known as comments.</li>
+</ul>
 
 </div>
 </div>
@@ -13144,7 +13145,8 @@ Suppose you have a tuple object like below. <br>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="mi">9</span> <span class="p">,</span> <span class="mf">2.4</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Print Hello Python.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello Python!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13155,7 +13157,11 @@ Suppose you have a tuple object like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.1.-Get-2nd-element-from-the-Tuple.">1.1. Get 2nd element from the Tuple.<a class="anchor-link" href="#1.1.-Get-2nd-element-from-the-Tuple.">&#182;</a></h3>
+<h3 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h3><ul>
+<li>Variable allows you to store values and reuse it by referencing its name.</li>
+<li>Each variable has its own data type. Run the following cell to find out the data type of the variable.</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -13164,8 +13170,8 @@ Suppose you have a tuple object like below. <br>
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 1.1</span>
-<span class="n">tuple1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">year1_sales</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;year1_sales is&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">year1_sales</span><span class="p">),</span> <span class="s2">&quot;data type&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13178,15 +13184,13 @@ Suppose you have a tuple object like below. <br>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>9</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>year1_sales is &lt;class &#39;int&#39;&gt; data type
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -13196,7 +13200,11 @@ Suppose you have a tuple object like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.2.-Concatenate-('apple',-20)-to-the-tuple-1.">1.2. Concatenate <code>('apple', 20)</code> to the tuple 1.<a class="anchor-link" href="#1.2.-Concatenate-('apple',-20)-to-the-tuple-1.">&#182;</a></h3>
+<h3 id="Data-Type-Behaviors">Data Type Behaviors<a class="anchor-link" href="#Data-Type-Behaviors">&#182;</a></h3><ul>
+<li>Different data type has different behavior.</li>
+<li>e.g. When you add two integers, it will sum the values. When you add two strings, it will concatenate the values.</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -13205,8 +13213,9 @@ Suppose you have a tuple object like below. <br>
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 1.2.</span>
-<span class="n">tuple1</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">year1_sales</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">year2_sales</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">year1_sales</span> <span class="o">+</span> <span class="n">year2_sales</span>
 </pre></div>
 
     </div>
@@ -13225,7 +13234,7 @@ Suppose you have a tuple object like below. <br>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(&#39;banana&#39;, 9, 2.4, False, &#39;apple&#39;, 20)</pre>
+<pre>300</pre>
 </div>
 
 </div>
@@ -13233,33 +13242,37 @@ Suppose you have a tuple object like below. <br>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exercise-2:-List">Exercise 2: List<a class="anchor-link" href="#Exercise-2:-List">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>List is the most basic structure in Python. List is a mutable Python object. <br>
-Suppose you have a list object like below. <br>
-<b>Note: Run the following cell.</b></p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;K-pop&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Rock&#39;</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># You can define string with single quote(&#39;) or double quote(&quot;)</span>
+<span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="s2">&quot;Python&quot;</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Hello Python&#39;</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13267,7 +13280,11 @@ Suppose you have a list object like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.1.-Extend-the-list1-with-2-more-elements-['Pop',20].-(Hint:-Use-extend()-or-+-operator)">2.1. Extend the <code>list1</code> with 2 more elements <code>['Pop',20]</code>. (Hint: Use <code>extend()</code> or <code>+</code> operator)<a class="anchor-link" href="#2.1.-Extend-the-list1-with-2-more-elements-['Pop',20].-(Hint:-Use-extend()-or-+-operator)">&#182;</a></h3>
+<h3 id="Basic-String-Manipulation-Exercises">Basic String Manipulation Exercises<a class="anchor-link" href="#Basic-String-Manipulation-Exercises">&#182;</a></h3><ul>
+<li>Python comes with many useful methods for the String data type. </li>
+<li>They are particularly useful when you want to strip the character to clean the data or capitalize or split the string. Following are few examples.</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -13276,8 +13293,7 @@ Suppose you have a list object like below. <br>
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 2.1.</span>
-<span class="n">list1</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;Pop&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">company_name</span> <span class="o">=</span> <span class="s2">&quot; cIti baNk;   &quot;</span>
 </pre></div>
 
     </div>
@@ -13285,20 +13301,16 @@ Suppose you have a list object like below. <br>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.2.-Slice-list1-to-get-the-first-3-elements.">2.2. Slice <code>list1</code> to get the first 3 elements.<a class="anchor-link" href="#2.2.-Slice-list1-to-get-the-first-3-elements.">&#182;</a></h3>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 2.2.</span>
-<span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># strip() - Return a copy of the string with leading and trailing whitespace removed.</span>
+<span class="c1"># upper() - Return a copy of the string converted to lower case</span>
+<span class="c1"># rstrip([chars]) - Return a copy of the string with trailing whitespace removed.</span>
+<span class="c1"># You can chain the string methods as below.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">company_name</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13311,38 +13323,50 @@ Suppose you have a list object like below. <br>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;K-pop&#39;, 10, &#39;Rock&#39;]</pre>
-</div>
-
-</div>
-
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>CITI BANK
+</pre>
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, suppose you have a nested list as below.</p>
+</div>
 
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,[</span><span class="s2">&quot;pop&quot;</span><span class="p">,[</span><span class="s2">&quot;rock&quot;</span><span class="p">,</span><span class="kc">False</span><span class="p">]]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># split(sep=None) - Return a list of the words, using sep as the delimiter</span>
+<span class="n">cities</span> <span class="o">=</span> <span class="s2">&quot;Singapore,Hong Kong,Tokyo,Sydney&quot;</span>
+<span class="n">cities</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Singapore&#39;, &#39;Hong Kong&#39;, &#39;Tokyo&#39;, &#39;Sydney&#39;]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13350,7 +13374,16 @@ Suppose you have a list object like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.3.-Get-length-of-list2.-(Hint:-Use-len(&lt;list&gt;))">2.3. Get length of <code>list2</code>. (Hint: Use <code>len(&lt;list&gt;)</code>)<a class="anchor-link" href="#2.3.-Get-length-of-list2.-(Hint:-Use-len(&lt;list&gt;))">&#182;</a></h3>
+<h2 id="Exercise-1:-List">Exercise 1: List<a class="anchor-link" href="#Exercise-1:-List">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>List is the most basic structure in Python. List is a mutable Python object. <br>
+Suppose you have a list object to record the sales data for 4 years as below. <br></p>
+
 </div>
 </div>
 </div>
@@ -13359,31 +13392,10 @@ Suppose you have a list object like below. <br>
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 2.3.</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sales_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">150</span><span class="p">]</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13391,7 +13403,7 @@ Suppose you have a list object like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.4.-Get-&quot;rock&quot;-from-list2">2.4. Get "rock" from list2<a class="anchor-link" href="#2.4.-Get-&quot;rock&quot;-from-list2">&#182;</a></h3>
+<h3 id="1.1.-Append-the-sales_list--by-adding-a-new-element-170.">1.1. Append the <code>sales_list</code>  by adding a new element <code>170</code>.<a class="anchor-link" href="#1.1.-Append-the-sales_list--by-adding-a-new-element-170.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13400,8 +13412,21 @@ Suppose you have a list object like below. <br>
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 2.4</span>
-<span class="n">list2</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 1.1. (Hint: Use `list.append(element)`)</span>
+<span class="n">sales_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">170</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">sales_list</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13414,15 +13439,13 @@ Suppose you have a list object like below. <br>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;rock&#39;</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[100, 120, 130, 150, 170]
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -13432,38 +13455,7 @@ Suppose you have a list object like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exercise-3:-Set">Exercise 3: Set<a class="anchor-link" href="#Exercise-3:-Set">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Set is an unordered unique elements. <br>
-Suppose you have two sets, A and B. <br>
-<b>Note: Run the following cell.</b></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">}</span>
-<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;durian&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">}</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.1.-Get-intersection-of-Set-A-and-Set-B.-(Hint:-Use-intersection()-or-&amp;-operator)">3.1. Get intersection of Set A and Set B. (Hint: Use <code>intersection()</code> or <code>&amp;</code> operator)<a class="anchor-link" href="#3.1.-Get-intersection-of-Set-A-and-Set-B.-(Hint:-Use-intersection()-or-&amp;-operator)">&#182;</a></h3>
+<h3 id="1.2.-Extend-the-sales_list-with-another_sales_list.">1.2. Extend the <code>sales_list</code> with <code>another_sales_list</code>.<a class="anchor-link" href="#1.2.-Extend-the-sales_list-with-another_sales_list.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13472,8 +13464,10 @@ Suppose you have two sets, A and B. <br>
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 3.1.</span>
-<span class="n">A</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">another_sales_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">60</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">130</span><span class="p">]</span>
+
+<span class="c1"># Your answer for 1.2. (Hint: Use `list.extend(new_list)` or list + new_list)</span>
+<span class="n">sales_list</span> <span class="o">+</span> <span class="n">another_sales_list</span>
 </pre></div>
 
     </div>
@@ -13492,7 +13486,7 @@ Suppose you have two sets, A and B. <br>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;banana&#39;}</pre>
+<pre>[100, 120, 130, 150, 170, 60, 90, 130]</pre>
 </div>
 
 </div>
@@ -13504,7 +13498,8 @@ Suppose you have two sets, A and B. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.2.-Get-union-of-Set-A-and-Set-B.">3.2. Get union of Set A and Set B.<a class="anchor-link" href="#3.2.-Get-union-of-Set-A-and-Set-B.">&#182;</a></h3>
+<h3 id="Suppose-you-have-a-new-list-now-as-below.">Suppose you have a new list now as below.<a class="anchor-link" href="#Suppose-you-have-a-new-list-now-as-below.">&#182;</a></h3><p>Run the following cell.</p>
+
 </div>
 </div>
 </div>
@@ -13513,8 +13508,28 @@ Suppose you have two sets, A and B. <br>
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 3.2.</span>
-<span class="n">A</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sales_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;year1&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;year2&#39;</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="s1">&#39;year3&#39;</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="s1">&#39;year4&#39;</span><span class="p">,</span> <span class="mi">150</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.3.-Retrieve-year2-sales-figure-which-is-120.">1.3. Retrieve year2 sales figure which is 120.<a class="anchor-link" href="#1.3.-Retrieve-year2-sales-figure-which-is-120.">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 1.3. (Hint: list[index], List is a zero-based index, starts at 0)</span>
+<span class="n">sales_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13527,13 +13542,13 @@ Suppose you have two sets, A and B. <br>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;apple&#39;, &#39;banana&#39;, &#39;durian&#39;, &#39;orange&#39;}</pre>
+<pre>120</pre>
 </div>
 
 </div>
@@ -13545,7 +13560,157 @@ Suppose you have two sets, A and B. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exercise-4:-Dictionary">Exercise 4: Dictionary<a class="anchor-link" href="#Exercise-4:-Dictionary">&#182;</a></h2>
+<h3 id="1.4.-Slice-sales_list-to-get-the-result-['year3',-130].">1.4. Slice <code>sales_list</code> to get the result <code>['year3', 130]</code>.<a class="anchor-link" href="#1.4.-Slice-sales_list-to-get-the-result-['year3',-130].">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 1.4. </span>
+<span class="c1"># (Hint: 1. list[start_index:stop_index], </span>
+<span class="c1">#        2. stop_index is one larger than the desired index)</span>
+<span class="n">sales_list</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;year3&#39;, 130]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.5.-Get-the-length-of-the-sales_list.">1.5. Get the length of the <code>sales_list</code>.<a class="anchor-link" href="#1.5.-Get-the-length-of-the-sales_list.">&#182;</a></h3><p><code>len()</code> method is use to get the length of a object.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 1.5. (Hint: len(list))</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">sales_list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>8</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.6.-Delete-the-first-2-elements-from-sales_list.">1.6. Delete the first 2 elements from <code>sales_list</code>.<a class="anchor-link" href="#1.6.-Delete-the-first-2-elements-from-sales_list.">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sales_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;year1&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;year2&#39;</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="s1">&#39;year3&#39;</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="s1">&#39;year4&#39;</span><span class="p">,</span> <span class="mi">150</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 1.6. (Hint: del(list[index]))</span>
+<span class="k">del</span><span class="p">(</span><span class="n">sales_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">sales_list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;year2&#39;, 120, &#39;year3&#39;, 130, &#39;year4&#39;, 150]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exercise-2:-Dictionary">Exercise 2: Dictionary<a class="anchor-link" href="#Exercise-2:-Dictionary">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13561,7 +13726,7 @@ Suppose you have a dictionary like below. <br>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">population</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;California&#39;</span><span class="p">:</span> <span class="mf">38.3</span><span class="p">,</span><span class="s1">&#39;Texas&#39;</span><span class="p">:</span> <span class="mf">26.5</span><span class="p">,</span><span class="s1">&#39;New York&#39;</span><span class="p">:</span> <span class="mf">19.7</span><span class="p">,</span><span class="s1">&#39;Florida&#39;</span><span class="p">:</span> <span class="mf">19.6</span><span class="p">,</span><span class="s1">&#39;Illinois&#39;</span><span class="p">:</span> <span class="mf">12.9</span><span class="p">}</span>
@@ -13575,18 +13740,30 @@ Suppose you have a dictionary like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.1.-Add-new-element-to-population-with-key-Singapore-and-value-5.6.">4.1. Add new element to population with key <code>Singapore</code> and value <code>5.6</code>.<a class="anchor-link" href="#4.1.-Add-new-element-to-population-with-key-Singapore-and-value-5.6.">&#182;</a></h3>
+<h3 id="2.1.-Add-new-element-to-population-with-key-Singapore-and-value-5.6.">2.1. Add new element to population with key <code>Singapore</code> and value <code>5.6</code>.<a class="anchor-link" href="#2.1.-Add-new-element-to-population-with-key-Singapore-and-value-5.6.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 4.1.</span>
-<span class="n">population</span><span class="p">[</span><span class="s1">&#39;Singapore&#39;</span><span class="p">]</span><span class="o">=</span><span class="mf">5.6</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">population</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 2.1. (Hint: use population[&#39;key&#39;] = value)</span>
+<span class="n">population</span><span class="p">[</span><span class="s1">&#39;Singapore&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">5.6</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">population</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13615,16 +13792,17 @@ Suppose you have a dictionary like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.2.-Get-all-keys-from-population-dictionary.-(Hint:-Use-keys())">4.2. Get all keys from population dictionary. (Hint: Use <code>keys()</code>)<a class="anchor-link" href="#4.2.-Get-all-keys-from-population-dictionary.-(Hint:-Use-keys())">&#182;</a></h3>
+<h3 id="2.2.-Get-all-keys-from-population-dictionary.">2.2. Get all keys from population dictionary.<a class="anchor-link" href="#2.2.-Get-all-keys-from-population-dictionary.">&#182;</a></h3><p>Use <code>dict.keys()</code> to get all the keys from the dictionary</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 4.2.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 2.2. (Hint: Use `dict.keys()`) </span>
 <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 </pre></div>
 
@@ -13638,7 +13816,7 @@ Suppose you have a dictionary like below. <br>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -13656,18 +13834,30 @@ Suppose you have a dictionary like below. <br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.3.-Delete-Texas-key-from-population.-(Hint:-Use-del(dict['key']))">4.3. Delete <code>Texas</code> key from population. (Hint: Use <code>del(dict['key'])</code>)<a class="anchor-link" href="#4.3.-Delete-Texas-key-from-population.-(Hint:-Use-del(dict['key']))">&#182;</a></h3>
+<h3 id="2.3.-Delete-Texas-key-from-population.">2.3. Delete <code>Texas</code> key from population.<a class="anchor-link" href="#2.3.-Delete-Texas-key-from-population.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 4.3.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for 2.3. (Hint: Use `del(dict[&#39;key&#39;])`)</span>
 <span class="k">del</span><span class="p">(</span><span class="n">population</span><span class="p">[</span><span class="s1">&#39;Texas&#39;</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">population</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">population</span><span class="p">)</span>
 </pre></div>
 
     </div>

@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>2. NumPy Exercises</title>
+<title>2_NumPy_Exercises</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,11 +13116,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Part-2:-NumPy-Exercises">Part 2: NumPy Exercises<a class="anchor-link" href="#Part-2:-NumPy-Exercises">&#182;</a></h1><p>NumPy's object is the homogeneous multidimensional array. In this exercise, you'll learn common operations of NumPy. <br></p>
-<p>1) Basics <br>
-2) Placeholders <br>
-3) Indexing, Slicing &amp; Concatenation <br></p>
-<p>Time to complete: 20 mins</p>
+<h1 id="Part-2:-NumPy-Exercises">Part 2: NumPy Exercises<a class="anchor-link" href="#Part-2:-NumPy-Exercises">&#182;</a></h1><p>NumPy's object is the homogeneous multidimensional array. In this exercise, you'll learn common operations in NumPy. <br></p>
+<p>Time to complete: 15 mins</p>
 
 </div>
 </div>
@@ -13148,7 +13145,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.-Basics">1. Basics<a class="anchor-link" href="#1.-Basics">&#182;</a></h2><p>Unlike Python lists, NumPy does not allow the elements of different types. If types do no match, NumPy will upcast if possible.</p>
+<h2 id="1.-Basics">1. Basics<a class="anchor-link" href="#1.-Basics">&#182;</a></h2><p>NumPy list can be constructed with np.array(list).</p>
 
 </div>
 </div>
@@ -13158,31 +13155,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;4&quot;</span><span class="p">,</span><span class="s2">&quot;5&quot;</span><span class="p">])</span>
-<span class="n">x</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([&#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;], dtype=&#39;&lt;U21&#39;)</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13190,8 +13167,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3>Exercise 1.1. Create a ndarray with the following list with type <code>float</code>. <br></h3>
-<p><code>["1","2","3","4","5"]</code></p>
+<p>Unlike Python lists, NumPy does not allow the elements of different types. If types do no match, NumPy will upcast if possible.</p>
 
 </div>
 </div>
@@ -13201,8 +13177,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 1.1.</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="s2">&quot;2&quot;</span><span class="p">,</span><span class="s2">&quot;3&quot;</span><span class="p">,</span><span class="s2">&quot;4&quot;</span><span class="p">,</span><span class="s2">&quot;5&quot;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;4&quot;</span><span class="p">,</span><span class="s2">&quot;5&quot;</span><span class="p">])</span>
 <span class="n">x</span>
 </pre></div>
 
@@ -13222,11 +13197,56 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([1., 2., 3., 4., 5.])</pre>
+<pre>array([&#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;], dtype=&#39;&lt;U21&#39;)</pre>
 </div>
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Suppose-you-have-regular-sales_list-and-expenses_list-as-below.">Suppose you have regular sales_list and expenses_list as below.<a class="anchor-link" href="#Suppose-you-have-regular-sales_list-and-expenses_list-as-below.">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sales_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">150</span><span class="p">]</span>
+<span class="n">expenses_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exercise-1.1.-Create-two-new-ndarrays.">Exercise 1.1. Create two new ndarrays.<a class="anchor-link" href="#Exercise-1.1.-Create-two-new-ndarrays.">&#182;</a></h3><p><code>np_sales_list</code> for sales_list <br>
+<code>np_expenses_list</code> for expenses_list</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 1.1. (Hint: np.array(list))</span>
+<span class="n">np_sales_list</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sales_list</span><span class="p">)</span>
+<span class="n">np_expenses_list</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">expenses_list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -13241,22 +13261,26 @@ div#notebook {
 <li><code>dtype</code> - Type of elements in array <br></li>
 <li><code>itemsize</code> - size in bytes of each element of the array <br></li>
 </ol>
-<h3 id="Exercise-1.2.-Print-attributes-of-array-x.">Exercise 1.2. Print attributes of array <code>x</code>.<a class="anchor-link" href="#Exercise-1.2.-Print-attributes-of-array-x.">&#182;</a></h3>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exercise-1.2.-Print-all-attributes-of-array-np_sales_list.">Exercise 1.2. Print all attributes of array <code>np_sales_list</code>.<a class="anchor-link" href="#Exercise-1.2.-Print-all-attributes-of-array-np_sales_list.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 1.2.</span>
-<span class="c1"># Use print()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">itemsize</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np_sales_list</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+
+<span class="c1"># Print the ndarray attributes (shape, size, dtype, itemsize).</span>
 </pre></div>
 
     </div>
@@ -13274,10 +13298,6 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>1
-(5,)
-5
-float64
-8
 </pre>
 </div>
 </div>
@@ -13289,106 +13309,7 @@ float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Placeholders">2. Placeholders<a class="anchor-link" href="#2.-Placeholders">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Following NumPy functions are useful when you need to quickly generate an array of values that follow some rule. <br>
-1) <code>np.zeros(shape, dtype=&lt;Type&gt;, order='C')</code><br>
-2) <code>np.ones(shape, dtype=&lt;Type&gt;, order='C')</code><br>
-3) <code>np.full(shape, fill_value, dtype=&lt;Type&gt;, order='C')</code><br>
-4) <code>np.arange([start,]stop[,step], dtype=None)</code>: Return evenly spaced values within a given interval <br>
-5) <code>np.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None, axis=0)</code>: <br></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">x</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Exercise-2.1.-Generate-a-ndarray-from-0-to-100-with-step-2-using-np.arange">Exercise 2.1. Generate a ndarray from 0 to 100 with step <code>2</code> using <code>np.arange</code><a class="anchor-link" href="#Exercise-2.1.-Generate-a-ndarray-from-0-to-100-with-step-2-using-np.arange">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 2.1.</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">x</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32,
-       34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66,
-       68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Random-array-generators---np.random">Random array generators - <code>np.random</code><a class="anchor-link" href="#Random-array-generators---np.random">&#182;</a></h2><p>The following methods are useful when you need to generate random arrays.</p>
-
+<h3 id="Exericise-1.3.-Get-the-sum-of-np_sales_list-and-np_expenses_list.">Exericise 1.3. Get the sum of <code>np_sales_list</code> and <code>np_expenses_list</code>.<a class="anchor-link" href="#Exericise-1.3.-Get-the-sum-of-np_sales_list-and-np_expenses_list.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13397,11 +13318,8 @@ float64
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Return random samples from a normal (Gaussian) distribution with loc </span>
-<span class="c1"># being the mean and scale being the standard deviation</span>
-<span class="c1"># np.random.normal(loc=0.0, scale=1.0, size=None)</span>
-
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 1.3. For np_sales_list (Hint: use np_list.sum())</span>
+<span class="n">np_sales_list</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13420,9 +13338,7 @@ float64
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[ 1.64118564, -0.45914051,  0.24320704],
-       [ 1.64123041, -0.18189648, -0.91310361],
-       [-0.49149669,  0.09227876, -0.09599912]])</pre>
+<pre>500</pre>
 </div>
 
 </div>
@@ -13436,10 +13352,8 @@ float64
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Return random integrers from `low` (inclusive) to `high` (exclusive)</span>
-<span class="c1"># np.random.randint((low, high=None, size=None, dtype=&#39;1&#39;))</span>
-
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 1.3. For np_expenses_list (Hint: use np_list.sum())</span>
+<span class="n">np_expenses_list</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13458,48 +13372,7 @@ float64
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[9, 5, 9],
-       [5, 2, 3],
-       [4, 8, 2]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># seed(seed=None)</span>
-<span class="c1"># Seed the generator to make the random numbers reproducible</span>
-
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[5, 0, 3],
-       [3, 7, 9],
-       [3, 5, 2]])</pre>
+<pre>190</pre>
 </div>
 
 </div>
@@ -13511,17 +13384,31 @@ float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Exercise-2.2.-Generate-random-10x10-2D-array-with-low=0,-high=100-using--randint">Exercise 2.2. Generate random 10x10 2D array with low=0, high=100 using  <code>randint</code><a class="anchor-link" href="#Exercise-2.2.-Generate-random-10x10-2D-array-with-low=0,-high=100-using--randint">&#182;</a></h3>
+<p>NumPy allows you to perform arithematic operation over an entire array. Let's calculate our profit from sales and expense for each year.</p>
+<h3 id="Exercise-1.4.-Create-np_profits_list-by-subtracting-np_expenses_list-from-np_sales_list.">Exercise 1.4. Create <code>np_profits_list</code> by subtracting <code>np_expenses_list</code> from <code>np_sales_list</code>.<a class="anchor-link" href="#Exercise-1.4.-Create-np_profits_list-by-subtracting-np_expenses_list-from-np_sales_list.">&#182;</a></h3>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 1.4.</span>
+<span class="n">np_profits_list</span> <span class="o">=</span> <span class="n">np_sales_list</span> <span class="o">-</span> <span class="n">np_expenses_list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 2.2.</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np_profits_list</span>
 </pre></div>
 
     </div>
@@ -13540,16 +13427,7 @@ float64
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[36, 87, 70, 88, 88, 12, 58, 65, 39, 87],
-       [46, 88, 81, 37, 25, 77, 72,  9, 20, 80],
-       [69, 79, 47, 64, 82, 99, 88, 49, 29, 19],
-       [19, 14, 39, 32, 65,  9, 57, 32, 31, 74],
-       [23, 35, 75, 55, 28, 34,  0,  0, 36, 53],
-       [ 5, 38, 17, 79,  4, 42, 58, 31,  1, 65],
-       [41, 57, 35, 11, 46, 82, 91,  0, 14, 99],
-       [53, 12, 42, 84, 75, 68,  6, 68, 47,  3],
-       [76, 52, 78, 15, 20, 99, 58, 23, 79, 13],
-       [85, 48, 49, 69, 41, 35, 64, 95, 69, 94]])</pre>
+<pre>array([ 50,  65,  85, 110])</pre>
 </div>
 
 </div>
@@ -13561,7 +13439,7 @@ float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.-Indexing,-Slicing-&amp;-Concatenation">3. Indexing, Slicing &amp; Concatenation<a class="anchor-link" href="#3.-Indexing,-Slicing-&amp;-Concatenation">&#182;</a></h3>
+<h3 id="Exercise-1.5.-Caculate-10%-increase-of-the-existing-profit-for-each-year.">Exercise 1.5. Caculate 10% increase of the existing profit for each year.<a class="anchor-link" href="#Exercise-1.5.-Caculate-10%-increase-of-the-existing-profit-for-each-year.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13570,9 +13448,8 @@ float64
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="p">(</span><span class="mi">15</span><span class="p">,))</span>
-<span class="n">x</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 1.5. (Multiply np_profilts_list with 1.1)</span>
+<span class="n">np_profits_list</span> <span class="o">*</span> <span class="mf">1.1</span>
 </pre></div>
 
     </div>
@@ -13591,8 +13468,7 @@ float64
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([684, 559, 629, 192, 835, 763, 707, 359,   9, 723, 277, 754, 804,
-       599,  70])</pre>
+<pre>array([ 55. ,  71.5,  93.5, 121. ])</pre>
 </div>
 
 </div>
@@ -13604,7 +13480,7 @@ float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Exercise-3.1.-Select-alternate-element-from-array-x-starting-from-index-0.">Exercise 3.1. Select alternate element from array <code>x</code> starting from index <code>0</code>.<a class="anchor-link" href="#Exercise-3.1.-Select-alternate-element-from-array-x-starting-from-index-0.">&#182;</a></h3>
+<h3 id="Exercise-1.6.-Get-sales-data-from-np_sales_list-which-is-greater-than-110.">Exercise 1.6. Get sales data from np_sales_list which is greater than 110.<a class="anchor-link" href="#Exercise-1.6.-Get-sales-data-from-np_sales_list-which-is-greater-than-110.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13613,8 +13489,8 @@ float64
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 3.1.</span>
-<span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 1.6. np_list[condition]</span>
+<span class="n">np_sales_list</span><span class="p">[</span><span class="n">np_sales_list</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13633,7 +13509,7 @@ float64
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([684, 629, 835, 707,   9, 277, 804,  70])</pre>
+<pre>array([120, 130, 150])</pre>
 </div>
 
 </div>
@@ -13645,7 +13521,15 @@ float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Exercise-3.2.-Get-the-elements-greater-than-700-from-array-x.">Exercise 3.2. Get the elements greater than 700 from array <code>x</code>.<a class="anchor-link" href="#Exercise-3.2.-Get-the-elements-greater-than-700-from-array-x.">&#182;</a></h3>
+<h3 id="2.-NumPy-2D-arrays">2. NumPy 2D arrays<a class="anchor-link" href="#2.-NumPy-2D-arrays">&#182;</a></h3><p>Previously you have 2 1-Dimensional arrays. Now let's group them together into 1 single 2-Dimensional arrays.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exercise-2.1.-Create-a-new-np_sales_expenses-ndarray-with-the-2-following-ndarrays.-With-row-0-as-the-sales_list.">Exercise 2.1. Create a new <code>np_sales_expenses</code> ndarray with the 2 following ndarrays. With row 0 as the <code>sales_list</code>.<a class="anchor-link" href="#Exercise-2.1.-Create-a-new-np_sales_expenses-ndarray-with-the-2-following-ndarrays.-With-row-0-as-the-sales_list.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13654,9 +13538,35 @@ float64
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ndarray[condition]</span>
-<span class="c1"># Your answer for Exercise 3.2.</span>
-<span class="n">x</span><span class="p">[</span><span class="n">x</span><span class="o">&gt;</span><span class="mi">700</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sales_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">150</span><span class="p">]</span>
+<span class="n">expenses_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 2.1. np_list = np.array([list1, list2])</span>
+<span class="n">np_sales_expenses</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">sales_list</span><span class="p">,</span> <span class="n">expenses_list</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np_sales_expenses</span>
 </pre></div>
 
     </div>
@@ -13669,13 +13579,14 @@ float64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([835, 763, 707, 723, 754, 804])</pre>
+<pre>array([[100, 120, 130, 150],
+       [ 50,  55,  45,  40]])</pre>
 </div>
 
 </div>
@@ -13687,20 +13598,38 @@ float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Exercise-3.3.-Create-two-1x3-int-arrays-and-concatenate.">Exercise 3.3. Create two 1x3 <code>int</code> arrays and concatenate.<a class="anchor-link" href="#Exercise-3.3.-Create-two-1x3-int-arrays-and-concatenate.">&#182;</a></h3>
+<h2 id="Subsetting-rows-and-columns">Subsetting rows and columns<a class="anchor-link" href="#Subsetting-rows-and-columns">&#182;</a></h2><p>In this new 2D array, row 0 represents sales and row 1 represents expenses while each column represents each year. Use the following syntax to get value from 2D array.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 3.3. (Hint: use np.concatenate([]))</span>
-<span class="c1"># np.array([], dtype=None)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
-<span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># np_sales_expenses[row_index, column_index]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exericise-2.2.-Select-sales-for-year-2-from-np_sales_expenses,-the-result-value-is-120.">Exericise 2.2. Select sales for year 2 from <code>np_sales_expenses</code>, the result value is <code>120</code>.<a class="anchor-link" href="#Exericise-2.2.-Select-sales-for-year-2-from-np_sales_expenses,-the-result-value-is-120.">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 2.2.</span>
+<span class="n">np_sales_expenses</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13713,13 +13642,95 @@ float64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([5, 6, 3, 7, 4, 1])</pre>
+<pre>120</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exercise-2.3.-Slice-sales-and-expenses-for-year-3-from-np_sales_expenses,-the-result-value-is-[130,-45].">Exercise 2.3. Slice sales and expenses for year 3 from <code>np_sales_expenses</code>, the result value is <code>[130, 45]</code>.<a class="anchor-link" href="#Exercise-2.3.-Slice-sales-and-expenses-for-year-3-from-np_sales_expenses,-the-result-value-is-[130,-45].">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 2.3. (Hint: Slicing syntax np_list[start_index:stop_index])</span>
+<span class="n">np_sales_expenses</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([130,  45])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exercise-2.4.-Get-the-average-expenses-for-all-4-years-from-np_sales_expenses.">Exercise 2.4. Get the average expenses for all 4 years from <code>np_sales_expenses</code>.<a class="anchor-link" href="#Exercise-2.4.-Get-the-average-expenses-for-all-4-years-from-np_sales_expenses.">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your answer for Exercise 2.4. (Hint: expenses is at row 1. Use np_list.mean() to get average.)</span>
+<span class="n">np_sales_expenses</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>47.5</pre>
 </div>
 
 </div>
